@@ -1,0 +1,68 @@
+@import "players.scss";
+@import "mundiales.scss";
+@import "estadios.scss";
+@import "ligasycopas.scss";
+
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    margin-bottom: 2rem;
+    h2{
+        text-decoration: underline;
+    }
+    .carousel{
+        &-caption{
+            h3, p{
+                background-color: rgba(0,0,0,0.5);
+            }
+        }
+    }
+}
+
+.news{
+    margin: 1rem;
+    h2{
+        text-decoration: underline;
+    }
+}
+
+.card-group{
+    &__1 , &__2, &__3{
+        padding: 1rem;
+        border: 1px solid black;
+    }
+
+}
+
+footer{
+    margin-top: 1rem;
+
+    .social{
+        margin-top: 2rem;
+
+        &--media{
+            display: flex;
+            img{
+                max-width: 180px;
+                max-height: 180px;
+                width: 23%;
+                height: auto;
+                padding: 1rem;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    ul li{
+        list-style: none;
+    }
+}

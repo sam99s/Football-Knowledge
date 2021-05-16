@@ -1,0 +1,52 @@
+.main--players h2 {
+  text-decoration: underline;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.main--players__text {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.mundiales h2, .mundiales h3 {
+  text-decoration: underline;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+body {
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.main {
+  margin-bottom: 2rem; }
+  .main h2 {
+    text-decoration: underline; }
+  .main .carousel-caption h3, .main .carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.news {
+  margin: 1rem; }
+  .news h2 {
+    text-decoration: underline; }
+
+.card-group__1, .card-group__2, .card-group__3 {
+  padding: 1rem;
+  border: 1px solid black; }
+
+footer {
+  margin-top: 1rem; }
+  footer .social {
+    margin-top: 2rem; }
+    footer .social--media {
+      display: flex; }
+      footer .social--media img {
+        max-width: 180px;
+        max-height: 180px;
+        width: 23%;
+        height: auto;
+        padding: 1rem;
+        object-fit: cover; }
+  footer ul li {
+    list-style: none; }
