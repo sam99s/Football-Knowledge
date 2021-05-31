@@ -1,7 +1,7 @@
 {
-  "name": "msd",
+  "name": "footballknowledge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio informativo de Fútbol",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,8 +9,8 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Samuel Schulz",
+  "license": "MIT",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.7"

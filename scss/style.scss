@@ -13,6 +13,41 @@ a{
     color: black;
 }
 
+header{
+    @keyframes rotate {        
+        from {
+            transform: rotate(0deg);
+        }
+        to {transform: rotate(360deg);}
+    }
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+
+    
+    .soccer{
+        -webkit-animation: 10s rotate linear 1s;
+        animation: 10s rotate linear 1s;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    h1:hover{
+        .soccer{
+            -webkit-animation: 7s rotate linear infinite;
+            animation: 7s rotate linear infinite;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        }
+    }
+}
+
+
 .main{
     margin-bottom: 2rem;
     h2{
@@ -23,6 +58,11 @@ a{
             h3, p{
                 background-color: rgba(0,0,0,0.5);
             }
+        }
+        img{
+            width: 100vw;
+            max-height: 80vh;
+            object-fit: cover;
         }
     }
 }
@@ -57,6 +97,13 @@ footer{
                 height: auto;
                 padding: 1rem;
                 object-fit: cover;
+                transform: scale(0.8);
+                transition: 2300ms;
+
+                &:hover{
+                    transform: scale(0.7, 0.7);
+                    transition: 1200ms;
+                }
             }
         }
 
