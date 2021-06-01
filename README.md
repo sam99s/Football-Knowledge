@@ -1,4 +1,4 @@
-# Mens-Soccer-Data-Schulz
+# Football-Knowledge-Schulz
 Proyecto para CODERHAUSE
 
 Es un proyecto con el fin de ver las habilidades aprendidas en el curso de Desarrollo web. Aqui se utilizan tecnologías como Sass, Bootstrap, HTML5, CSS3.
