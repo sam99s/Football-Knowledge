@@ -104,6 +104,11 @@
   width: auto;
   object-fit: cover; }
 
+.nosotros .tecnologias img {
+  height: 40vw;
+  width: auto;
+  object-fit: cover; }
+
 body {
   overflow-x: hidden; }
 
