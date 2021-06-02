@@ -2,6 +2,7 @@
 @import "mundiales.scss";
 @import "estadios.scss";
 @import "ligasycopas.scss";
+@import "nosotros.scss";
 
 
 body{
@@ -14,6 +15,7 @@ a{
 }
 
 header{
+
     @keyframes rotate {        
         from {
             transform: rotate(0deg);
@@ -86,7 +88,7 @@ footer{
     margin-top: 1rem;
 
     .social{
-        margin-top: 2rem;
+        margin-top: 1rem;
 
         &--media{
             display: flex;
@@ -105,6 +107,11 @@ footer{
                     transition: 1200ms;
                 }
             }
+        }
+
+        &--rules{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
 
     }

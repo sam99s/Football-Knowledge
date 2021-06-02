@@ -99,6 +99,11 @@
       transform: scale(1.04);
       transition: 2s; } }
 
+.nosotros img {
+  height: 30vh;
+  width: auto;
+  object-fit: cover; }
+
 body {
   overflow-x: hidden; }
 
@@ -153,7 +158,7 @@ header h1:hover .soccer {
 footer {
   margin-top: 1rem; }
   footer .social {
-    margin-top: 2rem; }
+    margin-top: 1rem; }
     footer .social--media {
       display: flex; }
       footer .social--media img {
@@ -168,5 +173,8 @@ footer {
         footer .social--media img:hover {
           transform: scale(0.7, 0.7);
           transition: 1200ms; }
+    footer .social--rules {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
   footer ul li {
     list-style: none; }
