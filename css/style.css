@@ -8,18 +8,25 @@
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
+/* ----------------------
+|       Variables       |
+-----------------------*/
+/* ----------------------
+|       mixins       |
+-----------------------*/
 .mundiales h2, .mundiales h3 {
   text-decoration: underline;
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
+/* Tablet para arriba */
 @media (min-width: 769px) {
   /* Uruguay */
   #m1930, #m1950 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(to left, rgba(175, 249, 252, 0.3) 70%, rgba(63, 184, 191, 0.3));
-    transition: 3s; }
+    transition: 3s;
+    background: linear-gradient(to left, rgba(175, 249, 252, 0.3) 70%, rgba(63, 184, 191, 0.3)); }
     #m1930:hover, #m1950:hover {
       background: linear-gradient(to left, #aff9fc 70%, #3fb8bf);
       transform: scale(1.04);
@@ -28,8 +35,8 @@
   #m1934, #m1938, #m1982, #m2006 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(to left, rgba(90, 163, 235, 0.5) 60%, rgba(0, 0, 200, 0.5));
-    transition: 3s; }
+    transition: 3s;
+    background: linear-gradient(to left, rgba(90, 163, 235, 0.5) 60%, rgba(0, 0, 200, 0.5)); }
     #m1934:hover, #m1938:hover, #m1982:hover, #m2006:hover {
       background: linear-gradient(to left, #5aa3eb 60%, #0000c8);
       transform: scale(1.04);
@@ -38,10 +45,10 @@
   #m1954, #m1974, #m1990, #m2014 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 30%, rgba(255, 0, 0, 0.5) 40%, rgba(255, 255, 0, 0.5)) 30%;
-    transition: 3s; }
+    transition: 3s;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 30%, rgba(255, 0, 0, 0.5) 30%, rgba(255, 255, 0, 0.5) 70%); }
     #m1954:hover, #m1974:hover, #m1990:hover, #m2014:hover {
-      background: linear-gradient(to bottom, black 30%, red 40%, yellow) 30%;
+      background: linear-gradient(to bottom, black 30%, red 30%, yellow 70%);
       transform: scale(1.04);
       transition: 2s; }
       #m1954:hover h3, #m1974:hover h3, #m1990:hover h3, #m2014:hover h3 {
@@ -50,8 +57,8 @@
   #m1958, #m1962, #m1970, #m1994, #m2002 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: radial-gradient(rgba(0, 128, 0, 0.3) 40%, rgba(154, 205, 50, 0.3) 10%, rgba(255, 255, 0, 0.3) 50%);
-    transition: 3s; }
+    transition: 3s;
+    background: radial-gradient(rgba(0, 128, 0, 0.3) 40%, rgba(154, 205, 50, 0.3) 10%, rgba(255, 255, 0, 0.3) 50%); }
     #m1958:hover, #m1962:hover, #m1970:hover, #m1994:hover, #m2002:hover {
       background: radial-gradient(green 40%, yellowgreen 10%, yellow 50%);
       transform: scale(1.04);
@@ -60,8 +67,8 @@
   #m1966 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(110deg, rgba(255, 0, 0, 0.3) 20%, rgba(255, 255, 255, 0.3) 80%);
-    transition: 3s; }
+    transition: 3s;
+    background: linear-gradient(110deg, rgba(255, 0, 0, 0.3) 20%, rgba(255, 255, 255, 0.3) 80%); }
     #m1966:hover {
       background: linear-gradient(110deg, red 35%, white 65%);
       transform: scale(1.04);
@@ -70,8 +77,8 @@
   #m1978, #m1986 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(110deg, rgba(255, 255, 255, 0.5), rgba(114, 211, 243, 0.5), rgba(255, 255, 255, 0.5), rgba(114, 211, 243, 0.5));
-    transition: 3s; }
+    transition: 3s;
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.5), rgba(114, 211, 243, 0.5), rgba(255, 255, 255, 0.5), rgba(114, 211, 243, 0.5)); }
     #m1978:hover, #m1986:hover {
       background: linear-gradient(110deg, white, #72d3f3, white, #72d3f3);
       transform: scale(1.04);
@@ -80,8 +87,8 @@
   #m1998, #m2018 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 139, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 0, 0, 0.3));
-    transition: 3s; }
+    transition: 3s;
+    background: linear-gradient(to bottom, rgba(0, 0, 139, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 0, 0, 0.3)); }
     #m1998:hover, #m2018:hover {
       background: linear-gradient(to bottom, darkblue, white, red);
       transform: scale(1.04);
@@ -92,8 +99,8 @@
   #m2010 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.3), rgba(255, 255, 0, 0.3) 30%, rgba(255, 0, 0, 0.3));
-    transition: 3s; }
+    transition: 3s;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.3), rgba(255, 255, 0, 0.3) 30%, rgba(255, 0, 0, 0.3)); }
     #m2010:hover {
       background: linear-gradient(to bottom, red, yellow 30%, red);
       transform: scale(1.04);
@@ -108,6 +115,34 @@
   height: 40vw;
   width: auto;
   object-fit: cover; }
+
+.nosotros img {
+  height: 30vh;
+  width: auto;
+  object-fit: cover; }
+
+.nosotros .tecnologias img {
+  height: 40vw;
+  width: auto;
+  object-fit: cover; }
+
+@media (min-width: 577px) {
+  @keyframes scale {
+    from {
+      transform: scale(5); }
+    to {
+      transform: scale(1); } }
+  @-webkit-keyframes scale {
+    from {
+      -webkit-transform: scale(5); }
+    to {
+      -webkit-transform: scale(1); } }
+  .container .pyp {
+    transform: scale(0.8);
+    -webkit-animation: 1s scale linear 100ms;
+    animation: 1s scale linear 100ms;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; } }
 
 body {
   overflow-x: hidden; }

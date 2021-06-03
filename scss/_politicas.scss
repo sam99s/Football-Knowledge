@@ -1,0 +1,37 @@
+@import "nosotros.scss";
+
+@mixin candado ($alto){
+    @if (($alto == 30vh)){
+        transform: scale(0.8);
+    } @else {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 577px) {
+    .container{
+        @keyframes scale {
+            from{
+                transform: scale(5);
+            } 
+            to {
+                transform: scale(1);
+            }
+        }
+        @-webkit-keyframes scale {
+            from{
+                -webkit-transform: scale(5);
+            } 
+            to {
+                -webkit-transform: scale(1);
+            }
+        }
+        .pyp{
+            @include candado($ALTURA);
+            -webkit-animation: 1s scale linear 100ms;
+            animation: 1s scale linear 100ms;
+            -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+        }
+    }
+}

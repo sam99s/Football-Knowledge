@@ -1,11 +1,14 @@
+@mixin margen-vertical {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .main--players{
     h2{
         text-decoration: underline;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        @include margen-vertical;
     }
     &__text{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        @include margen-vertical;
     }
 }

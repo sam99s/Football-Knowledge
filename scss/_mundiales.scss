@@ -1,4 +1,51 @@
+/* ----------------------
+|       Variables       |
+-----------------------*/
+
 $ESCALA: 1.04;
+
+$URUGUAY: linear-gradient(to left, rgba(175,249,252,0.3) 70%, rgba(63,184,191,0.3));
+$URUGUAY-CAMPEON: linear-gradient(to left, rgba(175,249,252,1) 70%, rgba(63,184,191,1));
+
+$ITALIA: linear-gradient(to left, rgba(90,163,235,0.5) 60%, rgba(0,0,200,0.5));
+$ITALIA-CAMPEON: linear-gradient(to left, rgba(90,163,235,1) 60%, rgba(0,0,200,1));
+
+$ALEMANIA: linear-gradient(to bottom, rgba(0,0,0,0.5) 30%, rgba(255,0,0,0.5) 30%, rgba(255,255,0,0.5)70%);
+$ALEMANIA-CAMPEON: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(255,0,0,1) 30%, rgba(255,255,0,1)70%);
+
+$BRASIL: radial-gradient(rgba(0,128,0,0.3) 40%, rgba(154,205,50,0.3) 10%, rgba(255,255,0,0.3) 50%);
+$BRASIL-CAMPEON: radial-gradient(rgba(0,128,0,1) 40%, rgba(154,205,50,1) 10%, rgba(255,255,0,1) 50%);
+
+$INGLATERRA: linear-gradient(110deg, rgba(255,0,0,0.3) 20%, rgba(255,255,255,0.3) 80%);
+$INGLATERRA-CAMPEON: linear-gradient(110deg, rgba(255,0,0,1) 35%, rgba(255,255,255,1) 65%);
+
+$ARGENTINA: linear-gradient(110deg, rgba(255,255,255,0.5), rgba(114, 211, 243,0.5), rgba(255,255,255,0.5), rgba(114, 211, 243,0.5));
+$ARGENTINA-CAMPEON: linear-gradient(110deg, rgba(255,255,255,1), rgba(114, 211, 243,1), rgba(255,255,255,1), rgba(114, 211, 243,1));
+
+$FRANCIA: linear-gradient(to bottom,rgba(0, 0, 139, 0.3), rgba(255, 255, 255, 0.3), rgba(255,0,0,0.3));
+$FRANCIA-CAMPEON: linear-gradient(to bottom,rgba(0, 0, 139, 1), rgba(255, 255, 255, 1), rgba(255,0,0,1));
+
+$ESPANA: linear-gradient(to bottom, rgba(255, 0, 0, 0.3) , rgba(255,255,0,0.3) 30%, rgba(255, 0, 0, 0.3));
+$ESPANA-CAMPEON: linear-gradient(to bottom, rgba(255, 0, 0, 1) , rgba(255,255,0,1) 30%, rgba(255, 0, 0, 1));
+
+/* ----------------------
+|       mixins       |
+-----------------------*/
+
+@mixin base-mundial {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    transition: 3s;
+}
+
+@mixin hover-mundial {
+    transform: scale($ESCALA);
+    transition: 2s;
+}
+
+@mixin pais-campeon ($pais) {
+    background: $pais;
+}
 
 .mundiales{
     h2, h3{
@@ -9,107 +56,85 @@ $ESCALA: 1.04;
 }
 
 
+/* Tablet para arriba */
+
 @media (min-width: 769px) {
     /* Uruguay */
     #m1930, #m1950{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: linear-gradient(to left, rgba(175,249,252,0.3) 70%, rgba(63,184,191,0.3));
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($URUGUAY);
         &:hover{
-            background: linear-gradient(to left, rgba(175,249,252,1) 70%, rgba(63,184,191,1));
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($URUGUAY-CAMPEON);
+            @include hover-mundial;            
         }
     }
     /* Italia */
     #m1934, #m1938, #m1982, #m2006{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: linear-gradient(to left, rgba(90,163,235,0.5) 60%, rgba(0,0,200,0.5));
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($ITALIA);
         &:hover{
-            background: linear-gradient(to left, rgba(90,163,235,1) 60%, rgba(0,0,200,1));
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($ITALIA-CAMPEON);
+            @include hover-mundial;
         }
     }
     /* Alemania */
     #m1954, #m1974, #m1990, #m2014{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: linear-gradient(to bottom, rgba(0,0,0,0.5) 30%, rgba(255,0,0,0.5) 40%, rgba(255,255,0,0.5)) 30%;
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($ALEMANIA);
         &:hover{
             h3{
                 color: white;
             }
-            background: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,0,1)) 30%;
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($ALEMANIA-CAMPEON);
+            @include hover-mundial;
         }
     }
     /* Brasil */
     #m1958, #m1962, #m1970, #m1994, #m2002{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: radial-gradient(rgba(0,128,0,0.3) 40%, rgba(154,205,50,0.3) 10%, rgba(255,255,0,0.3) 50%);
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($BRASIL);
         &:hover{
-            background: radial-gradient(rgba(0,128,0,1) 40%, rgba(154,205,50,1) 10%, rgba(255,255,0,1) 50%);
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($BRASIL-CAMPEON);
+            @include hover-mundial;
         }
     }
     /* Inglaterra */
     #m1966{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: linear-gradient(110deg, rgba(255,0,0,0.3) 20%, rgba(255,255,255,0.3) 80%);
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($INGLATERRA);
         &:hover{
-            background: linear-gradient(110deg, rgba(255,0,0,1) 35%, rgba(255,255,255,1) 65%);
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($INGLATERRA-CAMPEON);
+            @include hover-mundial;
         }
     }
     /* Argentina */
     #m1978, #m1986{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: linear-gradient(110deg, rgba(255,255,255,0.5), rgba(114, 211, 243,0.5), rgba(255,255,255,0.5), rgba(114, 211, 243,0.5));
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($ARGENTINA);
         &:hover{
-            background: linear-gradient(110deg, rgba(255,255,255,1), rgba(114, 211, 243,1), rgba(255,255,255,1), rgba(114, 211, 243,1));
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($ARGENTINA-CAMPEON);
+            @include hover-mundial;
         }
     }
     /* Francia */
     #m1998, #m2018{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: linear-gradient(to bottom,rgba(0, 0, 139, 0.3), rgba(255, 255, 255, 0.3), rgba(255,0,0,0.3));
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($FRANCIA);
         &:hover{
             h3{
                 color: white;
             }
-            background: linear-gradient(to bottom,rgba(0, 0, 139, 1), rgba(255, 255, 255, 1), rgba(255,0,0,1));
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($FRANCIA-CAMPEON);
+            @include hover-mundial;
         }
     }
     /* España */
     #m2010 {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background: linear-gradient(to bottom, rgba(255, 0, 0, 0.3) , rgba(255,255,0,0.3) 30%, rgba(255, 0, 0, 0.3));
-        transition: 3s;
+        @include base-mundial;
+        @include pais-campeon($ESPANA);
         &:hover{
-            background: linear-gradient(to bottom, rgba(255, 0, 0, 1) , rgba(255,255,0,1) 30%, rgba(255, 0, 0, 1));
-            transform: scale($ESCALA);
-            transition: 2s;
+            @include pais-campeon($ESPANA-CAMPEON);
+            @include hover-mundial;
         }
     }
 }
