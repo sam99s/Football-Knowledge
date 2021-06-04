@@ -151,6 +151,10 @@ a {
   text-decoration: none;
   color: black; }
 
+.pullApart {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg); }
