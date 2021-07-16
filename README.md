@@ -1,2 +1,2 @@
 # Football Knowledge
-Proyecto para CODERHAUSE
+Curso de Desarrollo Web Coderhouse
